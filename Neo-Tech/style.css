@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kaushan+Script&family=Nanum+Pen+Script&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Sour Gummy', sans-serif;
+}
+
+body{
+	background-color: antiquewhite;
+}
+
+nav{
+	position: fixed;
+	top: 0%;
+	width: 100%;
+	background-color: rgb(30, 82, 253);
+	padding: 1em 0;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30%;
+}
+
+.productos{
+	color: white;
+	text-decoration: none;
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	gap: 2em;
+}
+
+.productos a{
+	color: white;
+	text-decoration: none;
+	padding: 8px 16px;
+	transition: background-color 0.3s;
+}
+
+.productos a:hover{
+	background-color: rgb(255, 255, 255);
+	border-radius: 4px;
+	color:	rgb(30, 82, 253);
+}
+
+.desplegable{
+	position: relative;
+}
+
+.subproductos{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: rgb(30, 82, 253);
+	list-style-type: none;
+	padding: 0;
+	min-width: 100%;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subproductos li{
+	width: 100%;
+}
+
+.subproductos li a{
+	display: block;
+	padding: 8px 16px;
+	color: white;
+}
+
+.subproductos li a:hover{
+	background-color: white;
+	color: rgb(30, 82, 253);
+}
+
+.desplegable:hover .subproductos{
+	display: block;
+}
+
+.compra{
+	align-items: right;
+	justify-content: right;
+}
+.comprab{
+	background-color: transparent;
+}
+
+.comprab :hover{
+	color: gray;
+}
+
+.imagenp img{
+	width: 50%;
+}
+
+footer{
+	display: flex;
+	gap: 20%;
+	margin: 15px 0px 0px 0px;
+	background-color: #303030;
+	color: white;
+	padding-left: 50px;
+	padding-right: 100px;
+}
